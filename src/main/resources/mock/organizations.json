@@ -1,0 +1,19 @@
+{
+  "org1": {
+    "siteName": "Site Alpha",
+    "totalEdgeDevices": 24,
+    "status": "ok",
+    "healthy": 20,
+    "degraded": 3,
+    "down": 1
+  },
+  "org2": {
+    "siteName": "Site Beta",
+    "totalEdgeDevices": 12,
+    "status": "degraded",
+    "healthy": 8,
+    "degraded": 3,
+    "down": 1
+  }
+}
+
