@@ -1,0 +1,110 @@
+{
+  "site1": {
+    "siteId": "site1",
+    "siteName": "Site Alpha",
+    "totalEdgeDevicesCount": 3,
+    "onlineDevicesCount": 2,
+    "offlineDevicesCount": 1,
+    "edgeDevices": [
+      {
+        "deviceName": "Router-A1",
+        "role": "Hub",
+        "uptime": "45 days",
+        "status": "Online",
+        "systemIp": "10.0.1.1",
+        "model": "Cisco ISR 4331",
+        "associatedSite": "site1"
+      },
+      {
+        "deviceName": "Switch-A2",
+        "role": "Spoke",
+        "uptime": "30 days",
+        "status": "Online",
+        "systemIp": "10.0.1.2",
+        "model": "Cisco Catalyst 9300",
+        "associatedSite": "site1"
+      },
+      {
+        "deviceName": "Firewall-A3",
+        "role": "Edge",
+        "uptime": "0 days",
+        "status": "Offline",
+        "systemIp": "10.0.1.3",
+        "model": "Cisco ASA 5506",
+        "associatedSite": "site1"
+      }
+    ]
+  },
+  "site2": {
+    "siteId": "site2",
+    "siteName": "Site Beta",
+    "totalEdgeDevicesCount": 4,
+    "onlineDevicesCount": 3,
+    "offlineDevicesCount": 1,
+    "edgeDevices": [
+      {
+        "deviceName": "Router-B1",
+        "role": "Hub",
+        "uptime": "60 days",
+        "status": "Online",
+        "systemIp": "10.0.2.1",
+        "model": "Cisco ISR 4351",
+        "associatedSite": "site2"
+      },
+      {
+        "deviceName": "Switch-B2",
+        "role": "Spoke",
+        "uptime": "55 days",
+        "status": "Online",
+        "systemIp": "10.0.2.2",
+        "model": "Cisco Catalyst 9200",
+        "associatedSite": "site2"
+      },
+      {
+        "deviceName": "Switch-B3",
+        "role": "Spoke",
+        "uptime": "40 days",
+        "status": "Online",
+        "systemIp": "10.0.2.3",
+        "model": "Cisco Catalyst 9200",
+        "associatedSite": "site2"
+      },
+      {
+        "deviceName": "Firewall-B4",
+        "role": "Edge",
+        "uptime": "0 days",
+        "status": "Offline",
+        "systemIp": "10.0.2.4",
+        "model": "Cisco Firepower 1010",
+        "associatedSite": "site2"
+      }
+    ]
+  },
+  "site3": {
+    "siteId": "site3",
+    "siteName": "Site Gamma",
+    "totalEdgeDevicesCount": 2,
+    "onlineDevicesCount": 2,
+    "offlineDevicesCount": 0,
+    "edgeDevices": [
+      {
+        "deviceName": "Router-G1",
+        "role": "Hub",
+        "uptime": "90 days",
+        "status": "Online",
+        "systemIp": "10.0.3.1",
+        "model": "Cisco ISR 4321",
+        "associatedSite": "site3"
+      },
+      {
+        "deviceName": "Switch-G2",
+        "role": "Spoke",
+        "uptime": "85 days",
+        "status": "Online",
+        "systemIp": "10.0.3.2",
+        "model": "Cisco Catalyst 9100",
+        "associatedSite": "site3"
+      }
+    ]
+  }
+}
