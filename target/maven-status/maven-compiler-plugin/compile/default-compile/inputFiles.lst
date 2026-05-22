@@ -1,6 +1,10 @@
 /Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/SdwanMockApiApplication.java
 /Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/api/OrganizationController.java
 /Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/api/SdwanController.java
+/Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/model/DashboardData.java
 /Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/model/Organization.java
+/Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/model/SiteHealth.java
+/Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/repository/DashboardRepository.java
 /Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/repository/OrganizationRepository.java
+/Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/service/DashboardService.java
 /Users/prashantiyengar/Git/AI/boilerplate/backend/src/main/java/com/example/sdwan/service/OrganizationService.java
