@@ -1,19 +1,49 @@
 {
   "org1": {
-    "siteName": "Site Alpha",
+    "orgName": "Organization Alpha",
     "totalEdgeDevices": 24,
     "status": "ok",
     "healthy": 20,
     "degraded": 3,
-    "down": 1
+    "down": 1,
+    "sites": [
+      {
+        "siteId": "site1",
+        "siteName": "Site Alpha",
+        "status": "Degraded",
+        "totalEdgeDevicesCount": 3,
+        "onlineDevicesCount": 2,
+        "offlineDevicesCount": 1,
+        "edgeDevices": []
+      },
+      {
+        "siteId": "site2",
+        "siteName": "Site Beta",
+        "status": "Degraded",
+        "totalEdgeDevicesCount": 4,
+        "onlineDevicesCount": 3,
+        "offlineDevicesCount": 1,
+        "edgeDevices": []
+      }
+    ]
   },
   "org2": {
-    "siteName": "Site Beta",
+    "orgName": "Organization Beta",
     "totalEdgeDevices": 12,
     "status": "degraded",
     "healthy": 8,
     "degraded": 3,
-    "down": 1
+    "down": 1,
+    "sites": [
+      {
+        "siteId": "site3",
+        "siteName": "Site Gamma",
+        "status": "Online",
+        "totalEdgeDevicesCount": 2,
+        "onlineDevicesCount": 2,
+        "offlineDevicesCount": 0,
+        "edgeDevices": []
+      }
+    ]
   }
 }
-

@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/organizations")
 @CrossOrigin(origins = "*")
@@ -16,6 +18,11 @@ public class OrganizationController {
     @Autowired
     public OrganizationController(OrganizationService organizationService) {
         this.organizationService = organizationService;
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Organization>> getAllOrganizations() {
+        return ResponseEntity.ok(organizationService.getAllOrganizations());
     }
 
     @GetMapping("/{orgId}")

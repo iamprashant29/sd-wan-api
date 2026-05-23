@@ -6,6 +6,7 @@ public class Site {
 
     private String siteId;
     private String siteName;
+    private String status;
     private int totalEdgeDevicesCount;
     private int onlineDevicesCount;
     private int offlineDevicesCount;
@@ -13,10 +14,11 @@ public class Site {
 
     public Site() {}
 
-    public Site(String siteId, String siteName, int totalEdgeDevicesCount,
+    public Site(String siteId, String siteName, String status, int totalEdgeDevicesCount,
                 int onlineDevicesCount, int offlineDevicesCount, List<EdgeDevice> edgeDevices) {
         this.siteId = siteId;
         this.siteName = siteName;
+        this.status = status;
         this.totalEdgeDevicesCount = totalEdgeDevicesCount;
         this.onlineDevicesCount = onlineDevicesCount;
         this.offlineDevicesCount = offlineDevicesCount;
@@ -28,6 +30,9 @@ public class Site {
 
     public String getSiteName() { return siteName; }
     public void setSiteName(String siteName) { this.siteName = siteName; }
+
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
 
     public int getTotalEdgeDevicesCount() { return totalEdgeDevicesCount; }
     public void setTotalEdgeDevicesCount(int totalEdgeDevicesCount) { this.totalEdgeDevicesCount = totalEdgeDevicesCount; }

@@ -2,6 +2,7 @@
   "site1": {
     "siteId": "site1",
     "siteName": "Site Alpha",
+    "status": "Degraded",
     "totalEdgeDevicesCount": 3,
     "onlineDevicesCount": 2,
     "offlineDevicesCount": 1,
@@ -38,6 +39,7 @@
   "site2": {
     "siteId": "site2",
     "siteName": "Site Beta",
+    "status": "Degraded",
     "totalEdgeDevicesCount": 4,
     "onlineDevicesCount": 3,
     "offlineDevicesCount": 1,
@@ -83,6 +85,7 @@
   "site3": {
     "siteId": "site3",
     "siteName": "Site Gamma",
+    "status": "Online",
     "totalEdgeDevicesCount": 2,
     "onlineDevicesCount": 2,
     "offlineDevicesCount": 0,
