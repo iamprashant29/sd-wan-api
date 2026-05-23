@@ -4,6 +4,9 @@
 # Ignore compiled Java class files
 **/*.class
 
+# Ignore build-related list files
+*.lst
+
 # IntelliJ IDEA
 /.idea/
 *.iml

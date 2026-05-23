@@ -1,32 +1,46 @@
 package com.example.sdwan.model;
 
+import java.util.List;
+
 public class Organization {
 
-    private String siteName;
+    private String orgId;
+    private String orgName;
     private int totalEdgeDevices;
     private String status;
     private int healthy;
     private int degraded;
     private int down;
+    private List<Site> sites;
 
     public Organization() {
     }
 
-    public Organization(String siteName, int totalEdgeDevices, String status, int healthy, int degraded, int down) {
-        this.siteName = siteName;
+    public Organization(String orgId, String orgName, int totalEdgeDevices, String status, int healthy, int degraded, int down, List<Site> sites) {
+        this.orgId = orgId;
+        this.orgName = orgName;
         this.totalEdgeDevices = totalEdgeDevices;
         this.status = status;
         this.healthy = healthy;
         this.degraded = degraded;
         this.down = down;
+        this.sites = sites;
     }
 
-    public String getSiteName() {
-        return siteName;
+    public String getOrgId() {
+        return orgId;
     }
 
-    public void setSiteName(String siteName) {
-        this.siteName = siteName;
+    public void setOrgId(String orgId) {
+        this.orgId = orgId;
+    }
+
+    public String getOrgName() {
+        return orgName;
+    }
+
+    public void setOrgName(String orgName) {
+        this.orgName = orgName;
     }
 
     public int getTotalEdgeDevices() {
@@ -67,6 +81,14 @@ public class Organization {
 
     public void setDown(int down) {
         this.down = down;
+    }
+
+    public List<Site> getSites() {
+        return sites;
+    }
+
+    public void setSites(List<Site> sites) {
+        this.sites = sites;
     }
 }
 

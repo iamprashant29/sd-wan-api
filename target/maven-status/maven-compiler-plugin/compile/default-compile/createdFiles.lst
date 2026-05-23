@@ -1,7 +1,0 @@
-com/example/sdwan/SdwanMockApiApplication.class
-com/example/sdwan/service/OrganizationService.class
-com/example/sdwan/repository/OrganizationRepository.class
-com/example/sdwan/repository/OrganizationRepository$1.class
-com/example/sdwan/api/SdwanController.class
-com/example/sdwan/model/Organization.class
-com/example/sdwan/api/OrganizationController.class
