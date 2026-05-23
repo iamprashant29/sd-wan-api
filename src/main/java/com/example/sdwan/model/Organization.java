@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Organization {
 
+    private String orgId;
     private String orgName;
     private int totalEdgeDevices;
     private String status;
@@ -15,7 +16,8 @@ public class Organization {
     public Organization() {
     }
 
-    public Organization(String orgName, int totalEdgeDevices, String status, int healthy, int degraded, int down, List<Site> sites) {
+    public Organization(String orgId, String orgName, int totalEdgeDevices, String status, int healthy, int degraded, int down, List<Site> sites) {
+        this.orgId = orgId;
         this.orgName = orgName;
         this.totalEdgeDevices = totalEdgeDevices;
         this.status = status;
@@ -23,6 +25,14 @@ public class Organization {
         this.degraded = degraded;
         this.down = down;
         this.sites = sites;
+    }
+
+    public String getOrgId() {
+        return orgId;
+    }
+
+    public void setOrgId(String orgId) {
+        this.orgId = orgId;
     }
 
     public String getOrgName() {

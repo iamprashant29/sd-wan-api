@@ -19,11 +19,13 @@ public class OrganizationService {
     }
 
     public List<Organization> getAllOrganizations() {
-        return List.copyOf(repository.findAll().values());
+        return repository.findAll().entrySet().stream()
+                .map(e -> { e.getValue().setOrgId(e.getKey()); return e.getValue(); })
+                .toList();
     }
 
     public Optional<Organization> getOrganization(String orgId) {
-        return repository.findById(orgId);
+        return repository.findById(orgId).map(org -> { org.setOrgId(orgId); return org; });
     }
 }
 
