@@ -19,7 +19,7 @@ public class OrganizationService {
     }
 
     public List<Organization> getAllOrganizations() {
-        return repository.findAll().entrySet().stream()
+        return repository.findAllAsMap().entrySet().stream()
                 .map(e -> { e.getValue().setOrgId(e.getKey()); return e.getValue(); })
                 .toList();
     }

@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/edge-devices")
-@CrossOrigin(origins = "*")
 public class EdgeDeviceController {
 
     private final EdgeDeviceService edgeDeviceService;

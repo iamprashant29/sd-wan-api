@@ -3,6 +3,8 @@ package com.example.sdwan.service;
 import com.example.sdwan.model.DashboardData;
 import com.example.sdwan.model.SiteHealth;
 import com.example.sdwan.repository.DashboardRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,8 @@ import java.util.List;
 
 @Service
 public class DashboardService {
+
+    private static final Logger log = LoggerFactory.getLogger(DashboardService.class);
 
     private final DashboardRepository repository;
 
@@ -28,7 +32,7 @@ public class DashboardService {
                 siteHealthList.add(repository.toSiteHealth(n));
             }
         } catch (IOException e) {
-            // if reading fails return empty snapshot
+            log.error("Failed to read site nodes for dashboard: {}", e.getMessage());
         }
 
         int totalSites = siteHealthList.size();
