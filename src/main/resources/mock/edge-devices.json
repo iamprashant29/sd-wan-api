@@ -6,7 +6,25 @@
     "status": "Online",
     "systemIp": "10.0.1.1",
     "model": "Cisco ISR 4331",
-    "associatedSite": "site1"
+    "associatedSite": "site1",
+    "wanInterfaces": [
+      { "name": "WAN1", "status": "UP", "ipAddress": "100.64.1.1" },
+      { "name": "WAN2", "status": "UP", "ipAddress": "100.64.1.2" }
+    ],
+    "lanInterfaces": [
+      { "name": "LAN1", "status": "UP", "ipAddress": "192.168.1.1/24" },
+      { "name": "LAN2", "status": "UP", "ipAddress": "192.168.1.2/24" }
+    ],
+    "uplinkHistory": [
+      { "timestamp": "08:00", "wan1Mbps": 42, "wan2Mbps": 18 },
+      { "timestamp": "09:00", "wan1Mbps": 55, "wan2Mbps": 24 },
+      { "timestamp": "10:00", "wan1Mbps": 61, "wan2Mbps": 30 },
+      { "timestamp": "11:00", "wan1Mbps": 58, "wan2Mbps": 27 },
+      { "timestamp": "12:00", "wan1Mbps": 72, "wan2Mbps": 35 },
+      { "timestamp": "13:00", "wan1Mbps": 65, "wan2Mbps": 29 },
+      { "timestamp": "14:00", "wan1Mbps": 48, "wan2Mbps": 22 },
+      { "timestamp": "15:00", "wan1Mbps": 53, "wan2Mbps": 25 }
+    ]
   },
   "Switch-A2": {
     "deviceName": "Switch-A2",
@@ -15,7 +33,25 @@
     "status": "Online",
     "systemIp": "10.0.1.2",
     "model": "Cisco Catalyst 9300",
-    "associatedSite": "site1"
+    "associatedSite": "site1",
+    "wanInterfaces": [
+      { "name": "WAN1", "status": "UP", "ipAddress": "100.64.1.3" }
+    ],
+    "lanInterfaces": [
+      { "name": "LAN1", "status": "UP", "ipAddress": "192.168.2.1/24" },
+      { "name": "LAN2", "status": "UP", "ipAddress": "192.168.2.2/24" },
+      { "name": "LAN3", "status": "UP", "ipAddress": "192.168.2.3/24" }
+    ],
+    "uplinkHistory": [
+      { "timestamp": "08:00", "wan1Mbps": 28, "wan2Mbps": 0 },
+      { "timestamp": "09:00", "wan1Mbps": 34, "wan2Mbps": 0 },
+      { "timestamp": "10:00", "wan1Mbps": 40, "wan2Mbps": 0 },
+      { "timestamp": "11:00", "wan1Mbps": 37, "wan2Mbps": 0 },
+      { "timestamp": "12:00", "wan1Mbps": 45, "wan2Mbps": 0 },
+      { "timestamp": "13:00", "wan1Mbps": 39, "wan2Mbps": 0 },
+      { "timestamp": "14:00", "wan1Mbps": 31, "wan2Mbps": 0 },
+      { "timestamp": "15:00", "wan1Mbps": 36, "wan2Mbps": 0 }
+    ]
   },
   "Firewall-A3": {
     "deviceName": "Firewall-A3",
@@ -24,7 +60,15 @@
     "status": "Offline",
     "systemIp": "10.0.1.3",
     "model": "Cisco ASA 5506",
-    "associatedSite": "site1"
+    "associatedSite": "site1",
+    "wanInterfaces": [
+      { "name": "WAN1", "status": "DOWN", "ipAddress": "100.64.1.5" },
+      { "name": "WAN2", "status": "DOWN", "ipAddress": "100.64.1.6" }
+    ],
+    "lanInterfaces": [
+      { "name": "LAN1", "status": "DOWN", "ipAddress": "192.168.3.1/24" }
+    ],
+    "uplinkHistory": []
   },
   "Router-B1": {
     "deviceName": "Router-B1",
@@ -33,7 +77,25 @@
     "status": "Online",
     "systemIp": "10.0.2.1",
     "model": "Cisco ISR 4351",
-    "associatedSite": "site2"
+    "associatedSite": "site2",
+    "wanInterfaces": [
+      { "name": "WAN1", "status": "UP", "ipAddress": "100.64.2.1" },
+      { "name": "WAN2", "status": "UP", "ipAddress": "100.64.2.2" }
+    ],
+    "lanInterfaces": [
+      { "name": "LAN1", "status": "UP", "ipAddress": "192.168.10.1/24" },
+      { "name": "LAN2", "status": "UP", "ipAddress": "192.168.10.2/24" }
+    ],
+    "uplinkHistory": [
+      { "timestamp": "08:00", "wan1Mbps": 50, "wan2Mbps": 22 },
+      { "timestamp": "09:00", "wan1Mbps": 63, "wan2Mbps": 28 },
+      { "timestamp": "10:00", "wan1Mbps": 75, "wan2Mbps": 34 },
+      { "timestamp": "11:00", "wan1Mbps": 68, "wan2Mbps": 31 },
+      { "timestamp": "12:00", "wan1Mbps": 82, "wan2Mbps": 40 },
+      { "timestamp": "13:00", "wan1Mbps": 71, "wan2Mbps": 33 },
+      { "timestamp": "14:00", "wan1Mbps": 57, "wan2Mbps": 26 },
+      { "timestamp": "15:00", "wan1Mbps": 60, "wan2Mbps": 28 }
+    ]
   },
   "Switch-B2": {
     "deviceName": "Switch-B2",
@@ -42,7 +104,24 @@
     "status": "Online",
     "systemIp": "10.0.2.2",
     "model": "Cisco Catalyst 9200",
-    "associatedSite": "site2"
+    "associatedSite": "site2",
+    "wanInterfaces": [
+      { "name": "WAN1", "status": "UP", "ipAddress": "100.64.2.3" }
+    ],
+    "lanInterfaces": [
+      { "name": "LAN1", "status": "UP", "ipAddress": "192.168.11.1/24" },
+      { "name": "LAN2", "status": "UP", "ipAddress": "192.168.11.2/24" }
+    ],
+    "uplinkHistory": [
+      { "timestamp": "08:00", "wan1Mbps": 20, "wan2Mbps": 0 },
+      { "timestamp": "09:00", "wan1Mbps": 27, "wan2Mbps": 0 },
+      { "timestamp": "10:00", "wan1Mbps": 33, "wan2Mbps": 0 },
+      { "timestamp": "11:00", "wan1Mbps": 29, "wan2Mbps": 0 },
+      { "timestamp": "12:00", "wan1Mbps": 38, "wan2Mbps": 0 },
+      { "timestamp": "13:00", "wan1Mbps": 31, "wan2Mbps": 0 },
+      { "timestamp": "14:00", "wan1Mbps": 24, "wan2Mbps": 0 },
+      { "timestamp": "15:00", "wan1Mbps": 28, "wan2Mbps": 0 }
+    ]
   },
   "Switch-B3": {
     "deviceName": "Switch-B3",
@@ -51,7 +130,24 @@
     "status": "Online",
     "systemIp": "10.0.2.3",
     "model": "Cisco Catalyst 9200",
-    "associatedSite": "site2"
+    "associatedSite": "site2",
+    "wanInterfaces": [
+      { "name": "WAN1", "status": "UP", "ipAddress": "100.64.2.4" }
+    ],
+    "lanInterfaces": [
+      { "name": "LAN1", "status": "UP", "ipAddress": "192.168.12.1/24" },
+      { "name": "LAN2", "status": "UP", "ipAddress": "192.168.12.2/24" }
+    ],
+    "uplinkHistory": [
+      { "timestamp": "08:00", "wan1Mbps": 15, "wan2Mbps": 0 },
+      { "timestamp": "09:00", "wan1Mbps": 22, "wan2Mbps": 0 },
+      { "timestamp": "10:00", "wan1Mbps": 30, "wan2Mbps": 0 },
+      { "timestamp": "11:00", "wan1Mbps": 25, "wan2Mbps": 0 },
+      { "timestamp": "12:00", "wan1Mbps": 35, "wan2Mbps": 0 },
+      { "timestamp": "13:00", "wan1Mbps": 28, "wan2Mbps": 0 },
+      { "timestamp": "14:00", "wan1Mbps": 19, "wan2Mbps": 0 },
+      { "timestamp": "15:00", "wan1Mbps": 23, "wan2Mbps": 0 }
+    ]
   },
   "Firewall-B4": {
     "deviceName": "Firewall-B4",
@@ -60,7 +156,15 @@
     "status": "Offline",
     "systemIp": "10.0.2.4",
     "model": "Cisco Firepower 1010",
-    "associatedSite": "site2"
+    "associatedSite": "site2",
+    "wanInterfaces": [
+      { "name": "WAN1", "status": "DOWN", "ipAddress": "100.64.2.5" },
+      { "name": "WAN2", "status": "DOWN", "ipAddress": "100.64.2.6" }
+    ],
+    "lanInterfaces": [
+      { "name": "LAN1", "status": "DOWN", "ipAddress": "192.168.13.1/24" }
+    ],
+    "uplinkHistory": []
   },
   "Router-G1": {
     "deviceName": "Router-G1",
@@ -69,7 +173,25 @@
     "status": "Online",
     "systemIp": "10.0.3.1",
     "model": "Cisco ISR 4321",
-    "associatedSite": "site3"
+    "associatedSite": "site3",
+    "wanInterfaces": [
+      { "name": "WAN1", "status": "UP", "ipAddress": "100.64.3.1" },
+      { "name": "WAN2", "status": "UP", "ipAddress": "100.64.3.2" }
+    ],
+    "lanInterfaces": [
+      { "name": "LAN1", "status": "UP", "ipAddress": "192.168.20.1/24" },
+      { "name": "LAN2", "status": "UP", "ipAddress": "192.168.20.2/24" }
+    ],
+    "uplinkHistory": [
+      { "timestamp": "08:00", "wan1Mbps": 38, "wan2Mbps": 16 },
+      { "timestamp": "09:00", "wan1Mbps": 47, "wan2Mbps": 20 },
+      { "timestamp": "10:00", "wan1Mbps": 56, "wan2Mbps": 26 },
+      { "timestamp": "11:00", "wan1Mbps": 51, "wan2Mbps": 23 },
+      { "timestamp": "12:00", "wan1Mbps": 64, "wan2Mbps": 31 },
+      { "timestamp": "13:00", "wan1Mbps": 57, "wan2Mbps": 27 },
+      { "timestamp": "14:00", "wan1Mbps": 43, "wan2Mbps": 19 },
+      { "timestamp": "15:00", "wan1Mbps": 49, "wan2Mbps": 22 }
+    ]
   },
   "Switch-G2": {
     "deviceName": "Switch-G2",
@@ -78,6 +200,23 @@
     "status": "Online",
     "systemIp": "10.0.3.2",
     "model": "Cisco Catalyst 9100",
-    "associatedSite": "site3"
+    "associatedSite": "site3",
+    "wanInterfaces": [
+      { "name": "WAN1", "status": "UP", "ipAddress": "100.64.3.3" }
+    ],
+    "lanInterfaces": [
+      { "name": "LAN1", "status": "UP", "ipAddress": "192.168.21.1/24" },
+      { "name": "LAN2", "status": "UP", "ipAddress": "192.168.21.2/24" }
+    ],
+    "uplinkHistory": [
+      { "timestamp": "08:00", "wan1Mbps": 18, "wan2Mbps": 0 },
+      { "timestamp": "09:00", "wan1Mbps": 24, "wan2Mbps": 0 },
+      { "timestamp": "10:00", "wan1Mbps": 32, "wan2Mbps": 0 },
+      { "timestamp": "11:00", "wan1Mbps": 27, "wan2Mbps": 0 },
+      { "timestamp": "12:00", "wan1Mbps": 40, "wan2Mbps": 0 },
+      { "timestamp": "13:00", "wan1Mbps": 33, "wan2Mbps": 0 },
+      { "timestamp": "14:00", "wan1Mbps": 21, "wan2Mbps": 0 },
+      { "timestamp": "15:00", "wan1Mbps": 26, "wan2Mbps": 0 }
+    ]
   }
 }

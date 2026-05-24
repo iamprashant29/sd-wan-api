@@ -1,5 +1,7 @@
 package com.example.sdwan.model;
 
+import java.util.List;
+
 public class EdgeDevice {
 
     private String deviceName;
@@ -9,19 +11,11 @@ public class EdgeDevice {
     private String systemIp;
     private String model;
     private String associatedSite;
+    private List<DeviceInterface> wanInterfaces;
+    private List<DeviceInterface> lanInterfaces;
+    private List<BandwidthPoint> uplinkHistory;
 
     public EdgeDevice() {}
-
-    public EdgeDevice(String deviceName, String role, String uptime, String status,
-                      String systemIp, String model, String associatedSite) {
-        this.deviceName = deviceName;
-        this.role = role;
-        this.uptime = uptime;
-        this.status = status;
-        this.systemIp = systemIp;
-        this.model = model;
-        this.associatedSite = associatedSite;
-    }
 
     public String getDeviceName() { return deviceName; }
     public void setDeviceName(String deviceName) { this.deviceName = deviceName; }
@@ -43,4 +37,13 @@ public class EdgeDevice {
 
     public String getAssociatedSite() { return associatedSite; }
     public void setAssociatedSite(String associatedSite) { this.associatedSite = associatedSite; }
+
+    public List<DeviceInterface> getWanInterfaces() { return wanInterfaces; }
+    public void setWanInterfaces(List<DeviceInterface> wanInterfaces) { this.wanInterfaces = wanInterfaces; }
+
+    public List<DeviceInterface> getLanInterfaces() { return lanInterfaces; }
+    public void setLanInterfaces(List<DeviceInterface> lanInterfaces) { this.lanInterfaces = lanInterfaces; }
+
+    public List<BandwidthPoint> getUplinkHistory() { return uplinkHistory; }
+    public void setUplinkHistory(List<BandwidthPoint> uplinkHistory) { this.uplinkHistory = uplinkHistory; }
 }
